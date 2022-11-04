@@ -21,12 +21,12 @@ body {
 
 
 .header-container {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    margin-top: -320px;
+    width: 640px;
+    margin: auto;
+    margin-top: 10em;
     text-align: center;
+
+    
 
 
 
@@ -54,7 +54,7 @@ body {
     color: red;
     text-transform: uppercase;
     background-image: linear-gradient(
-        -225deg,
+        45deg,
         #231557 0%,
         #44107a 29%,
         #ff1361 67%,
@@ -79,43 +79,11 @@ body {
     }
   }
 
-.nav-links {
 
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-content {
-    padding: 50px;
-    color: white;
-    font-size: 3vh;
-    margin-top: 60vh;
-
-}
-
-
-.nav-content a {
-    text-decoration: none;
-    color: white;
-    background: linear-gradient(45deg, rgba(255, 195, 160, 0.8), rgba(255,175,189, 0.8));
-    padding: 4px;
-    border-radius: 10px;
-    transform: scale(0.8);
-    box-shadow: 1px 2px 2px 1px #ccc;
-    transform: all 0.3s ease;
-    display: inline-block;
-    width: 5em;
-    text-align: center; 
-}   
-
-.nav-content a:hover {
-    transform: scale(1);
-    background: linear-gradient(45deg, rgba(255, 195, 160, 1), rgba(255,175,189, 1));
-}
 
 .image-container {
-    margin-top: 50em;
+    position: relative;
+    margin-top: 60em;
     width: 100%;
     height: 200em;
     align-items: center;
@@ -123,57 +91,208 @@ body {
 
 }
 
-ul {
+
+.next-button {
+    margin: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+}
+
+.next-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    border: 3px solid hsla(67, 95%, 95%, 1);
+    background: hsla(67, 95%, 95%, 1);
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.next-button .fa-arrow-right {
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.next-button a:hover {
+    transform: translateX(10px);
+    
+}
+
+/* -----------------END OF INDEX.HTML------------------ */
+
+/* ---------------START OF IMAGES--------------- */
+.row {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-li {
-    height: 40vh;
-    flex-grow: 1;
+.column {
+    flex: 25;
+    max-width: 25%;
+    padding: 0 4px;
 }
 
-img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-    padding: 3px;
-    border-radius: 0.5rem;
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
     transition: all 0.3s ease;
-    animation-duration: 2s;
     animation-iteration-count: infinite;
-    transform-origin: bottom;
-
+    animation-duration: 2s;
+    border-radius: 10px;
+    border: 3px solid hsla(67, 95%, 95%, 1);
 }
 
-img:hover{
+.column img:hover {
     animation-name: bounce;
     animation-timing-function: ease;
-    border-radius: 10%;
-
 }
 
 @keyframes bounce {
     0% {
-        transform: translateY(0);
- 
-    } 50% {
-        transform: translateY(-50px);
-   
-
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-25px);
     } 100% {
-        transform: translateY(0);
-       
-
+        transform: translateY(0px);
     }
 }
 
-p {
-    margin-top: 50rem;
-    color: white;
-    margin-left: 50px;
-    text-align: center;
-    font-family: 'Dancing Script';
-    font-size: 5rem;
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.memories {
+    width: 600px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Dancing Script', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 64px;
+    padding: 25px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border:dashed 4px hsla(0, 95%, 35%, 1);
+    background: hsla(67, 95%, 95%, 1);
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+#Btn {
+    font-family: 'Dancing Script', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+    padding: 6px;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    border: none;
+    color: black;
+    outline: none;
+    display: none;
+    border-radius: 20px;
+    border: 3px solid hsla(67, 95%, 95%, 1);
+    background: hsla(67, 95%, 95%, 1);
+    transition: all 0.3s ease;
+}
+
+#Btn:hover {
+    transform: scale(1.1);
+}
+
+
+.index-button {
+    margin: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+}
+
+.index-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    border: 3px solid hsla(67, 95%, 95%, 1);
+    background: hsla(67, 95%, 95%, 1);
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.index-button .fa-arrow-right {
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.index-button a:hover {
+    transform: translateX(-10px);
+    
+}
+
+
+.letters-button {
+    margin: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+}
+
+.letters-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    border: 3px solid hsla(67, 95%, 95%, 1);
+    background: hsla(67, 95%, 95%, 1);
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.letters-button .fa-arrow-right {
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.letters-button a:hover {
+    transform: translateX(10px);
+    
+}
+
+
+
