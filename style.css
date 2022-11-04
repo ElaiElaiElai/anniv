@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Griffy&family=Montserrat:ital@1&family=Poppins:ital,wght@0,300;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Maven+Pro:wght@400;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+
+body {
+    background-image: url(images/background1.jpg);
+    background-repeat: none;
+
+}
+
+
+.header-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -320px;
+    text-align: center;
+
+
+
+    /* width: 50em;
+    height: 40em;
+    margin-left: 40em;
+    margin-right: auto;
+    margin-top: 100px;
+    background: red; */
+}
+
+.header-text {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 15vh;
+    display: inline-block;
+    color: white;
+    
+    
+}
+
+
+
+.fa-heart{
+    color: red;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+
+
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+.nav-links {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    padding: 50px;
+    color: white;
+    font-size: 3vh;
+    margin-top: 60vh;
+
+}
+
+
+.nav-content a {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, rgba(255, 195, 160, 0.8), rgba(255,175,189, 0.8));
+    padding: 4px;
+    border-radius: 10px;
+    transform: scale(0.8);
+    box-shadow: 1px 2px 2px 1px #ccc;
+    transform: all 0.3s ease;
+    display: inline-block;
+    width: 5em;
+    text-align: center; 
+}   
+
+.nav-content a:hover {
+    transform: scale(1);
+    background: linear-gradient(45deg, rgba(255, 195, 160, 1), rgba(255,175,189, 1));
+}
+
+.image-container {
+    margin-top: 50em;
+    width: 100%;
+    height: 200em;
+    align-items: center;
+    margin-left: 20px;
+
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    height: 40vh;
+    flex-grow: 1;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    padding: 3px;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+
+}
+
+img:hover{
+    animation-name: bounce;
+    animation-timing-function: ease;
+    border-radius: 10%;
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+ 
+    } 50% {
+        transform: translateY(-50px);
+   
+
+    } 100% {
+        transform: translateY(0);
+       
+
+    }
+}
+
+p {
+    margin-top: 50rem;
+    color: white;
+    margin-left: 50px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 5rem;
+}
