@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Griffy&family=Montserrat:ital@1&family=Poppins:ital,wght@0,300;0,600;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Maven+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Maven+Pro:wght@400;600&family=Montserrat:wght@300&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -48,8 +46,6 @@ body {
     
 }
 
-
-
 .fa-heart{
     color: red;
     text-transform: uppercase;
@@ -69,7 +65,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
-
 
 }
 
@@ -301,29 +296,30 @@ body {
 /* -------------------LETTER------------------------ */
 
 .letter-container {
-    width: 600px;
+    width: 1500px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 7rem;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    border:dashed 4px hsla(0, 95%, 35%, 1);
-    background: hsla(67, 95%, 95%, 1);
+    margin-top: 10rem;
+    color: white;
     font-size: 5vh;
     line-height: 2em;
     font-family: 'Dancing Script', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .letter2-container {
-    width: 600px;
+    width: 1500px;
+    padding: 50px;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 5rem;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     border:dashed 4px hsla(0, 95%, 35%, 1);
     background: hsla(67, 95%, 95%, 1);
-    font-size: 5vh;
+    font-size: 2vh;
     line-height: 2em;
-    font-family: 'Dancing Script', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
 }
+
